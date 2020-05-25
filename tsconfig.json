@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "lib": ["esnext", "dom"],
+    "outDir": "dist"
+  },
+  "exclude": [
+    "node_modules",
+    "files",
+    "processed",
+    "upload",
+    "../tmp/files",
+    "../tmp/processed",
+    "../tmp/upload"
+  ]
+}
