@@ -35,7 +35,7 @@ export const Mutations = {
       },
       photoUrl: {
         name: "User's photo url",
-        type: new GraphQLNonNull(GraphQLString),
+        type: GraphQLString,
       },
       isSubscribedToNewsletter: {
         name: "User's agreement to subscribe to our new letter",
