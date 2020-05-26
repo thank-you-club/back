@@ -21,7 +21,7 @@ export const Queries = {
     args: {
       team: {
         name: "Cycle's team",
-        type: GraphQLString,
+        type: new GraphQLNonNull(GraphQLString),
       },
     },
     resolve: async (obj, args, { user }: { user: IUser }) => {
@@ -94,7 +94,7 @@ export const Mutations = {
         (p, c) => p + c.value,
         0
       );
-      if (totalPointGiven + args.value > 1000) throw 400;
+      if (totalPointGiven + args.value > 1000 || args.value <= 0) throw 400;
       const newTransaction = new Transaction({
         issuer: user._id,
         target: args.target,
