@@ -9,8 +9,8 @@ export default async function sendEmail({
   html,
   attachmentData,
   attachmentName,
-  from = "iva@iva-docs.com",
-  subject = "Hey i'm done! Iva.",
+  from = "noreply@thank-you.club",
+  subject = "Thank you! (club)",
 }: {
   to: string;
   html: string;
