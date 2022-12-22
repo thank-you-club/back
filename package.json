@@ -23,7 +23,7 @@
     "express-fileupload": "^1.1.4",
     "express-graphql": "^0.8.0",
     "graphql": "^14.2.1",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "moment": "^2.24.0",
     "mongoose": "^5.5.4",
     "pm2": "^3.5.1"
